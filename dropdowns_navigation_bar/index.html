@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            margin: 0;
+        }
+        ul{
+            margin: 0;
+            padding: 0;
+            background: black;
+           
+            overflow: hidden;
+        }
+        ul li {
+            float: left;
+            list-style-type: none;
+        }
+        ul li a{
+            padding: 20px 25px;
+            text-transform: uppercase;
+            text-decoration: none;
+            color: white;
+            display: inline-block;
+        }
+        .dropdown_content a{
+            display: block;
+           
+            color: black;
+        }
+        .dropdown_content{
+            background: #f1f1f1;;
+            display: none;
+            position: absolute;
+        }
+        ul li a:hover{
+            background-color: red;
+        }
+        .dropdown:hover .dropdown_content{
+          display: block; 
+        }
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="">Home</a></li>
+        <li><a href="">About</a></li>
+        <li class="dropdown">
+            <a href="">blog</a>
+            <div class="dropdown_content">
+                <a>sport</a>
+                <a>edacutaion</a>
+            </div>
+        </li>
+        <li><a href="">contract</a></li>
+    </ul>
+</body>
+</html>
