@@ -1,0 +1,30 @@
+.sprite ul{
+    margin: 0;
+    padding: 0;
+
+} 
+.sprite{
+    overflow: hidden;
+}
+ .sprite ul li{
+    list-style-type: none;
+    float: left;
+    margin-right:10px ;
+} 
+.sprite ul li:last-child{
+    margin-right: 0;
+}
+ .sprite ul li  a{
+    background-image: url(picture.png);
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+     
+    display: inline-block;
+    transition: 1s;
+}
+.sprite ul li :hover:nth-child(1) {
+    background-position: 0 -90px;
+}
